@@ -4,3 +4,7 @@
     - mode: 644
     - user: root
     - group: root
+
+app-shells/bash-completion:
+  pkg:
+    - latest
