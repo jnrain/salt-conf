@@ -2,3 +2,4 @@ base:
   '*':
     - eix
     - mosh
+    - bash
