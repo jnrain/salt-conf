@@ -18,6 +18,10 @@ base:
     - match: grain
     - base.sanity.ubuntu
 
+  'G@os:Ubuntu and not G@roles:ubuntumirror':
+    - match: compound
+    - apt.sync
+
   'roles:salt':
     - match: grain
     - base.gitsync
