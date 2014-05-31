@@ -1,5 +1,5 @@
 # Sanity for Ubuntu nodes
-# This is directly copied from the pypa-salt project.
+# Heavily based on the pypa-salt project.
 
 niceties:
   pkg.installed:
@@ -14,13 +14,12 @@ niceties:
 time-sync:
   pkg.installed:
     - pkgs:
-      - ntp
       - ntpdate
 
-ntp:
-  service:
-    - running
-    - enable: True
+  cron.present:
+    - identifier: ntpdate
+    - name: 'ntpdate ntp.jnrain.org > /var/log/salt/cron-ntpdate.log 2>&1'
+    - hour: '*/2'
 
 ubuntu:
   user.absent:
