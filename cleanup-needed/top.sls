@@ -1,5 +1,0 @@
-base:
-  '*':
-    - eix
-    - mosh
-    - bash
