@@ -17,3 +17,7 @@ base:
   'roles:salt':
     - match: grain
     - base.gitsync
+
+  'roles:portagemirror':
+    - match: grain
+    - portage.mirror
