@@ -8,9 +8,7 @@ import salt.utils
 # hack used by salt.grains.core
 import salt.modules.cmdmod
 
-__salt__ = {
-        'cmd.run': salt.modules.cmdmod._run_quiet,
-        }
+_cmd_run = salt.modules.cmdmod._run_quiet
 
 
 def gentoo_arch():
@@ -27,7 +25,7 @@ def gentoo_arch():
         return {}
 
     try:
-        envvar_ARCH = __salt__['cmd.run']('portageq envvar ARCH').strip()
+        envvar_ARCH = _cmd_run('portageq envvar ARCH').strip()
         return {'gentooarch': envvar_ARCH, }
     except OSError:
         return {}
