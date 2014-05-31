@@ -1,6 +1,6 @@
 # Time sync for physical nodes, as LXC nodes don't need (and can't execute)
 # these.
-time-sync:
+time-sync-gentoo:
   pkg.installed:
     - pkgs:
       - net-misc/ntp

@@ -1,6 +1,6 @@
 # Sanity for Gentoo nodes
 
-necessities:
+gentoo-necessities:
   pkg.installed:
     - pkgs:
       - sys-process/cronie
