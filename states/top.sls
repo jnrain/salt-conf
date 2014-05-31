@@ -1,6 +1,8 @@
 base:
   '*':
     - base.autostate
+    - wheel
+    - users
 
   'os:Gentoo':
     - match: grain
