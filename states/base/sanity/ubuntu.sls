@@ -9,6 +9,7 @@ niceties:
       - tree
       - bash-completion
       - vim
+      - mosh
 
 time-sync:
   pkg.installed:
