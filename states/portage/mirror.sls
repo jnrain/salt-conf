@@ -3,7 +3,7 @@ net-misc/rsync:
   pkg:
     - installed
 
-portage-mirror:
+12h-interval-portage-sync-mirror:
   cron.present:
     - identifier: portage-sync-mirror
     - name: 'eix-sync -q -C --ask -C n > /var/log/salt/cron-eix-sync.log 2>&1'
