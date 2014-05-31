@@ -10,6 +10,10 @@ base:
     - match: compound
     - base.sanity.gentoo.physical
 
+  'G@os:Gentoo and G@virtual:physical and not G@virtual_subtype:* and not G@roles:portagemirror':
+    - match: compound
+    - portage.sync
+
   'os:Ubuntu':
     - match: grain
     - base.sanity.ubuntu
