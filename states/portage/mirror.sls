@@ -1,9 +1,9 @@
 # Portage mirror node settings
-portage-mirror:
-  pkg.installed:
-    - pkgs:
-      - net-misc/rsync
+net-misc/rsync:
+  pkg:
+    - installed
 
+portage-mirror:
   cron.present:
     - identifier: portage-sync-mirror
     - name: 'eix-sync -q -C --ask -C n > /var/log/salt/cron-eix-sync.log 2>&1'
