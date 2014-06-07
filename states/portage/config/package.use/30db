@@ -1,0 +1,3 @@
+dev-db/mysql jemalloc -perl
+dev-db/mariadb jemalloc -perl
+dev-db/postgresql-server uuid

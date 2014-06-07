@@ -7,6 +7,7 @@ base:
   'os:Gentoo':
     - match: grain
     - base.sanity.gentoo.base
+    - portage.use
 
   'G@os:Gentoo and G@virtual:physical and not G@virtual_subtype:*':
     - match: compound

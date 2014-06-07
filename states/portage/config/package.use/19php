@@ -1,0 +1,5 @@
+media-libs/gd jpeg png
+
+dev-lang/php cgi curl curlwrappers embed fpm gd intl mysql mysqli mysqlnd pdo sockets threads xml xmlreader
+
+app-admin/eselect-php fpm

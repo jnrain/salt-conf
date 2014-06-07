@@ -1,0 +1,13 @@
+sys-devel/gcc -nls graphite
+sys-apps/man-pages -linguas_zh_CN
+virtual/udev hwdb
+sys-fs/udev hwdb
+
+# required by app-forensics/rkhunter-1.4.0
+# required by rkhunter (argument)
+sys-process/lsof rpc
+
+sys-fs/lvm2 -thin
+
+# reduce bloat
+net-nds/openldap icu minimal
