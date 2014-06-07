@@ -32,3 +32,7 @@ base:
   'roles:portagemirror':
     - match: grain
     - portage.mirror
+
+  'roles:ntpserver':
+    - match: grain
+    - ntp.server
